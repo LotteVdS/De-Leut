@@ -2,56 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De Leut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
         body {
-            font-family: 'Open Sans', sans-serif;
+            background-color: pink;
+            font-family: 'Lexend', sans-serif;
         }
-        .card {
-            background-color: #FDE8E4;
-            border-radius: 20px;
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
         }
+        .button {
+            background-color: lightpink;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin: 10px auto;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: hotpink;
+        }
+        .container {
+            text-align: center;
+        }
+        .grid {
+            display: flex;
+            flex-direction: column;
+        }
+        .decorative {
+            margin: 20px auto;
+            font-size: 20px;
+        }
+        .visitor-counter {
+            margin-bottom: 10px;
+        }
+        .secret-message {
+            margin: 20px 0;
+            color: rgb(198, 23, 110);
+        }
+
+
     </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="card p-8 max-w-sm mx-auto">
-        <div class="flex justify-between items-center">
-            <span class="text-sm font-semibold text-gray-700">TODAY</span>
-            <span class="text-sm font-semibold text-gray-700">DECEMBER ></span>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>De Leut</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#" style="color:rgb(198, 23, 110)">Verversen</a></li>
+            <li><a href="#" style="color:rgb(198, 23, 110)">Over De Leut</a></li>
+            <li><a href="https://forms.gle/Y1c3WypNBc29ZywP9" role="button" style="background-color:rgb(198, 23, 110); border-color:rgb(198, 23, 110)">Inbox</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welkom bij mijn goede voornemen voor 2024!</h2>
+                    <div class="secret-message">Proficiat, jij curieuze neuze. Je hebt mijn geheime navigatie pagina gevonden!</div>
+                <!-- CuterCounter Code -->
+                <div class="visitor-counter">
+                    <a href='http://www.freevisitorcounters.com'>Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=e1cc14c85a8e60348f4e831115aa9059e32ce0e9'></script>
+                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1129092/t/13"></script>
+                </div>
+            </hgroup>
+                <span class="decorative">🌸🌺🌼🌸🌺🌼</span>
+                <a href="De-Leut/Januari24.html" class="button">January</a>
+                <a href="#" class="button">February</a>
+                <a href="#" class="button">March</a>
+                <a href="#" class="button">April</a>
+                <a href="#" class="button">May</a>
+                <a href="#" class="button">June</a>
+                <a href="#" class="button">July</a>
+                <a href="#" class="button">August</a>
+                <a href="#" class="button">September</a>
+                <a href="#" class="button">October</a>
+                <a href="#" class="button">November</a>
+                <a href="#" class="button">December</a>
+                <span class="decorative">🌸🌺🌼🌸🌺🌼</span>
+            </section>
         </div>
-        <div class="flex flex-col items-center my-6">
-            <span class="text-6xl font-bold text-gray-800">16</span>
-            <span class="text-2xl font-semibold text-gray-700">December</span>
-        </div>
-        <div>
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">TO-DO</h3>
-            <ul>
-                <li class="flex items-center mb-2">
-                    <span class="inline-block w-3 h-3 bg-red-600 mr-2"></span>
-                    <span class="text-gray-700">Plan family vacation</span>
-                </li>
-                <li class="flex items-center">
-                    <span class="inline-block w-3 h-3 bg-blue-600 mr-2"></span>
-                    <span class="text-gray-700">Pick Melissa from school</span>
-                </li>
-            </ul>
-        </div>
-        <div class="mt-6">
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">EVENTS</h3>
-            <ul>
-                <li class="flex items-center">
-                    <span class="inline-block w-3 h-3 bg-orange-600 mr-2"></span>
-                    <span class="text-gray-700">Larry’s birthday bash party</span>
-                </li>
-            </ul>
-        </div>
-        <div class="absolute top-0 right-0 -mt-10 -mr-10">
-            <img src="https://placehold.co/300x200.png?text=Landscape+with+sun%2C+clouds%2C+and+trees" alt="Illustration of a landscape with sun, clouds, and trees, in pastel colors" class="w-48">
-        </div>
-    </div>
+    </main>
+    <footer class="container">
+        <small><p>Helemaal naar onder gescrolld zeg? • Awel, ik wens je een fantastische dag toe :)</p></small>
+    </footer>
 </body>
 </html>
