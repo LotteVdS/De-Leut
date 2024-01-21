@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Google Form</title>
+<style>
+  .Dq4amc {
+    display: none !important;
+  }
+</style>
+</head>
+<body>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2bNLavavlwpoXZQsVR_0SnBmRv34ir6Sc1U37MqSYSRjIXw/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<script>
+  window.addEventListener('load', function() {
+    const observer = new MutationObserver(function() {
+      const iframeContent = document.querySelector('iframe').contentDocument;
+      const titleElement = iframeContent.querySelector('.Dq4amc');
+      if (titleElement) {
+        titleElement.style.display = 'none';
+      }
+    });
+
+    observer.observe(document.querySelector('iframe'), { attributes: true, attributeFilter: ['src'] });
+  });
+</script>
+
+</body>
+</html>
