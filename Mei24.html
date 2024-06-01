@@ -119,8 +119,10 @@
     }
 
     .section {
-      width: calc(100% - 36px);
-      /* Vermindert de breedte met de breedte van de borders en box-shadow */
+      max-width: 600px;
+      /* Stelt de maximale breedte in op 600px */
+      width: calc(100% - 206px);
+      /* Maakt de sectie responsive */
       box-sizing: border-box;
       /* Inclusief borders en box-shadow in de breedte berekening */
       border-right: solid 12px black;
@@ -131,8 +133,10 @@
     }
 
     .section_special {
-      width: calc(100% - 30px);
-      /* Vermindert de breedte met de breedte van de borders en box-shadow */
+      max-width: 600px;
+      /* Stelt de maximale breedte in op 600px */
+      width: calc(100% - 200px);
+      /* Maakt de sectie responsive */
       box-sizing: border-box;
       /* Inclusief borders en box-shadow in de breedte berekening */
       margin: 0 auto;
