@@ -119,10 +119,8 @@
     }
 
     .section {
-      max-width: 600px;
+      width: 600px;
       /* Stelt de maximale breedte in op 600px */
-      width: calc(100% - 206px);
-      /* Maakt de sectie responsive */
       box-sizing: border-box;
       /* Inclusief borders en box-shadow in de breedte berekening */
       border-right: solid 12px black;
@@ -132,15 +130,74 @@
       /* Centreert de sectie */
     }
 
+    .section_header {
+      width: 600px;
+      box-sizing: border-box;
+      /* Inclusief borders en box-shadow in de breedte berekening */
+      border-right: solid 12px black;
+      border-left: solid 12px black;
+      box-shadow: -3px 0 0 #bbaaad, 3px 0 0 #bbaaad;
+      margin: 0 auto;
+      /* Centreert de sectie */
+      height: 224px;
+      background-image: url("https://dl.dropboxusercontent.com/scl/fi/khel8nqnzxwls8s2s5ofu/header-may-pt2.png?rlkey=rnfiirjxqwywa7w5mclnaut1e&st=4eorwk0y");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
     .section_special {
-      max-width: 600px;
-      /* Stelt de maximale breedte in op 600px */
-      width: calc(100% - 200px);
-      /* Maakt de sectie responsive */
+      width: 605px;
       box-sizing: border-box;
       /* Inclusief borders en box-shadow in de breedte berekening */
       margin: 0 auto;
       /* Centreert de sectie */
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .section,
+      .section_header {
+        max-width: 100% !important;
+        width: 100% !important;
+        border-right: solid 11px black;
+        border-left: solid 11px black;
+        box-shadow: -3px 0 0 #bbaaad, 3px 0 0 #bbaaad;
+      }
+
+      .section_special {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+      .section,
+      .section_header {
+        border-right: solid 8px black;
+        border-left: solid 8px black;
+        box-shadow: -3px 0 0 #bbaaad, 3px 0 0 #bbaaad;
+      }
+
+      .section_special {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+
+      .section,
+      .section_header {
+        border-right: solid 5px black;
+        border-left: solid 5px black;
+        box-shadow: -3px 0 0 #bbaaad, 3px 0 0 #bbaaad;
+      }
+
+      .section_special {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
     }
   </style>
 </head>
@@ -203,40 +260,38 @@
         </tbody>
       </table>
     </div>
-    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook" style="width:800px;" width="800" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><v:rect style="width:800px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill origin="0, -0.5" position="0, -0.5" src="https://dl.dropboxusercontent.com/scl/fi/khel8nqnzxwls8s2s5ofu/header-may-pt2.png?rlkey=rnfiirjxqwywa7w5mclnaut1e&st=4eorwk0y" type="frame" size="1,1" aspect="atleast" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"><![endif]-->
-    <div class="section" style="background:url(https://dl.dropboxusercontent.com/scl/fi/khel8nqnzxwls8s2s5ofu/header-may-pt2.png?rlkey=rnfiirjxqwywa7w5mclnaut1e&st=4eorwk0y) center top / cover no-repeat;background-position:center top;background-repeat:no-repeat;background-size:cover;margin:0px auto;max-width:800px;">
-      <div style="line-height:0;font-size:0;">
-        <table align="center" background="https://dl.dropboxusercontent.com/scl/fi/khel8nqnzxwls8s2s5ofu/header-may-pt2.png?rlkey=rnfiirjxqwywa7w5mclnaut1e&st=4eorwk0y" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:url(https://dl.dropboxusercontent.com/scl/fi/khel8nqnzxwls8s2s5ofu/header-may-pt2.png?rlkey=rnfiirjxqwywa7w5mclnaut1e&st=4eorwk0y) center top / cover no-repeat;background-position:center top;background-repeat:no-repeat;background-size:cover;width:100%;">
-          <tbody>
-            <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:800px;" ><![endif]-->
-                <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;padding-top:170px;word-break:break-word;">
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
-                            <tr>
-                              <td align="center" bgcolor="#E4C3D0" role="presentation" style="border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#E4C3D0;" valign="middle">
-                                <p style="display:inline-block;background:#E4C3D0;color:#9A3F34;font-family:Libre Bodoni;font-size:18px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;"> JOIN THE PARTY <span style="font-family:'Winx';font-size:23px;">xo</span>
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!--[if mso | IE]></td></tr></table><![endif]-->
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="section_header-outlook" style="width:800px;" width="800" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="section_header" style="margin:0px auto;max-width:800px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:800px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;padding-top:150px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                          <tr>
+                            <td align="center" bgcolor="#E4C3D0" role="presentation" style="border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#E4C3D0;" valign="middle">
+                              <p style="display:inline-block;background:#E4C3D0;color:#9A3F34;font-family:Libre Bodoni;font-size:18px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;"> JOIN THE PARTY <span style="font-family:'Winx';font-size:23px;">xo</span>
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <!--[if mso | IE]></v:textbox></v:rect></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook" style="width:800px;" width="800" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook" style="width:800px;" width="800" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div class="section" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:800px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
         <tbody>
@@ -248,7 +303,7 @@
                   <tbody>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Varela Round;font-size:13px;line-height:1;text-align:left;color:#000000;"></div>
+                        <div style="font-family:Varela Round;font-size:13px;line-height:1;text-align:left;color:#000000;">bla bla bla</div>
                       </td>
                     </tr>
                   </tbody>
